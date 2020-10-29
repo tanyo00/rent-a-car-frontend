@@ -134,10 +134,6 @@ export default function CarFleet () {
 
   const [rentEvent, setRentEvent] = useState({})
 
-  const [startDate, setStartDate] = useState(new Date())
-
-  const [endDate, setEndDate] = useState(new Date())
-
   const handleStartDate = e => {
     setStartDate(e.target.value)
   }
