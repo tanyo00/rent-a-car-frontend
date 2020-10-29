@@ -1,0 +1,50 @@
+.rent-car-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .rent-form {
+        margin-bottom: 30px;
+        padding: 20px;
+        margin-top: 150px;
+        border: 1px solid black;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        .dates {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .date {
+                margin: 30px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                
+            }
+        }
+        .inputs {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            input {
+                margin: 10px 0px 10px 0px;
+                width: 70%;
+            }
+            button {
+                outline: none;
+                border: none;
+                border-radius: 10px;
+                background: steelblue;
+                color: white;
+                margin-top: 20px;
+                padding: 5px 50px;
+            }
+        }
+    }
+}

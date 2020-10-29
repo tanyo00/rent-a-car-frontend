@@ -1,0 +1,137 @@
+@import "vehicle";
+@import "customer";
+@import "home";
+@import "rent";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-customers {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    .customer {
+        margin: 20px 0px 20px 0px;
+        width: 95%;
+        padding: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 3px 3px 16px #ccc;
+
+        .btn {
+            width: 150px;
+            margin-top: 20px;
+        }
+        .rentals {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    }
+}
+
+.spinner  {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-inputs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    .date {
+        margin: 10px 0px 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .inpt {
+        margin: 10px 0px 10px 0px;
+        
+    }
+    .customer-info {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        input {
+            margin: 10px 0px 10px 0px;
+        }
+    }
+}
+
+.cars-container {
+    margin-top: 100px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+@media screen and(max-width:1300px){
+    .cars-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and(max-width:950px){
+    .cars-container {
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and(max-width:630px){
+    .cars-container {
+        grid-template-columns: 1fr  ;
+    }
+}
+.buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-fleet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rentals {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .rental {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 3px 3px 13px #ccc;
+        padding: 30px;
+        width: 50%;
+       border-radius: 10px;
+       @media screen and(max-width:600px){
+           width: 90%;
+       }
+    }
+}
