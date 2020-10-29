@@ -134,14 +134,6 @@ export default function CarFleet () {
 
   const [rentEvent, setRentEvent] = useState({})
 
-  const handleStartDate = e => {
-    setStartDate(e.target.value)
-  }
-
-  const handleEndDate = e => {
-    setEndDate(e.target.value)
-  }
-
   const rentCar = e => {
     handleShowRent()
   }
@@ -214,11 +206,11 @@ export default function CarFleet () {
                     <div className='modal-inputs dates'>
                       <div className='date'>
                         <label>Start Date</label>
-                        <input type='date' onChange={handleStartDate} />
+                        <input type='date' />
                       </div>
                       <div className='date'>
                         <label>End date</label>
-                        <input type='date' onChange={handleEndDate} />
+                        <input type='date' />
                       </div>
                       <div className='customer-info'>
                         <h4>Customer </h4>
