@@ -168,17 +168,6 @@ export default function CarFleet () {
 
   const handleCloseRent2 = e => {
     setRentEvent(JSON.parse(e.target.name))
-    /*
-    setShowRent(false)
-    const dayOfYear = date =>
-      Math.floor(
-        (date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24
-      )
-    let startRent = dayOfYear(new Date(startDate))
-    let endRent = dayOfYear(new Date(endDate))
-    setEndDate('')
-    setStartDate('')
-    */
 
     let customer = customers.filter(cust => cust.fullName === custObject.name)
     customer[0].rentals.push(rentEvent)
