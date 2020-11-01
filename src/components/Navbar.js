@@ -43,7 +43,6 @@ export default function Navigation () {
           <MyNavLink to='/add-customer'>Add Customer</MyNavLink>
           <MyNavLink to='/car-fleet'>Car Fleet</MyNavLink>
           <MyNavLink to='/customers'>Browse Customers</MyNavLink>
-          <MyNavLink to='/rent'>Rent a car</MyNavLink>
         </Nav>
       </Navbar.Collapse>
     </MyNavbar>

@@ -8,7 +8,6 @@ import Home from './components/Home'
 import CarFleet from './components/CarFleet'
 import './styles/styles.css'
 import BrowseCust from './components/BrowseCust'
-import Rent from './components/Rent'
 
 export default function App () {
   return (
@@ -20,7 +19,6 @@ export default function App () {
         <Route path='/add-customer' component={Customer} />
         <Route path='/car-fleet' component={CarFleet} />
         <Route path='/customers' component={BrowseCust} />
-        <Route path='/rent' component={Rent} />
       </div>
     </Router>
   )
